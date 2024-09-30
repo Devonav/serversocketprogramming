@@ -1,3 +1,4 @@
+//Implemented by Devon Villalona
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -34,7 +35,7 @@ int main() {
     struct sockaddr_in server_addr, client_addr;
     socklen_t client_len = sizeof(client_addr);
     char buffer[BUFFER_SIZE];
-    int port = 5555;  // You can change this to any port above 5000
+    int port = 5555;  // Ensure this matches the client port
 
     // Create a TCP socket
     server_fd = socket(AF_INET, SOCK_STREAM, 0);
